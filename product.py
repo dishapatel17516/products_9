@@ -8,12 +8,9 @@ def product_details(product_id, name, quantity, price):
         f"Price: Rs. {price:.2f}"
     )
 
-# Taking input using command-line arguments
-product_id = sys.argv[1]
-name = sys.argv[2]
-quantity = int(sys.argv[3])
-price = float(sys.argv[4])
-
-result = product_details(product_id, name, quantity, price)
-
-print(result)
+if __name__ == "__main__":
+    product_id = sys.argv[1]
+    name = sys.argv[2]
+    quantity = int(sys.argv[3])
+    price = float(sys.argv[4])
+    print(product_details(product_id, name, quantity, price))
